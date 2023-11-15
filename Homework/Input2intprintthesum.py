@@ -19,8 +19,7 @@ if num1.find(",") != -1:
 if num2.find(",") != -1:
        num2 = num2.replace(",",".")
        print (f"You are trying to use comma [,] beside dot [.] - string replaced with correct values")
-print (num1)
-print (num2)
+
 if tryParseIntFloat(num1) != None:
     number1 = tryParseIntFloat(num1)
 else:
