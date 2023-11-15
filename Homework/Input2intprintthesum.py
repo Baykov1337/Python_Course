@@ -12,15 +12,27 @@ def tryParseIntFloat(val):
         except ValueError:
             return None
 
+if num1.find(",") != -1:
+       num1 = num1.replace(",",".")
+       print (f"You are trying to use comma [,] beside dot [.] - string replaced with correct values")
+
+if num2.find(",") != -1:
+       num2 = num2.replace(",",".")
+       print (f"You are trying to use comma [,] beside dot [.] - string replaced with correct values")
+print (num1)
+print (num2)
 if tryParseIntFloat(num1) != None:
     number1 = tryParseIntFloat(num1)
 else:
-   print (f"incorrect value for First value [{num1}], please enter a valid number ")
+    print (f"incorrect value for First value [{num1}], please enter a valid number ")
 
 if tryParseIntFloat(num2) != None:
     number2 = tryParseIntFloat(num2)
 else:
-    print (f"incorrect value for Second value [{num2}], please enter a valid number ")
+    if num2.find(",") == -1:
+       print (f"You are trying to use comma [,] beside dot [.]")
+    else: 
+       print (f"incorrect value for Second value [{num2}], please enter a valid number ")
         
 #print (tryParseIntFloat(num1))
 #print (tryParseIntFloat(num2))
