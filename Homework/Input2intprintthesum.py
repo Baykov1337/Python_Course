@@ -1,26 +1,26 @@
 num1 = input("Enter first number: ")
 num2 = input("Enter second number: ")
 
-def tryParseIntFloat(value):
+def tryParseIntFloat(val):
     try:
-        result = int(value)
-        return result
+        res = int(val)
+        return res
     except ValueError:
         try:
-            result = float(value)
-            return result
+            res = float(val)
+            return res
         except ValueError:
             return None
 
 if tryParseIntFloat(num1) != None:
     number1 = tryParseIntFloat(num1)
 else:
-   print (f"incorrect value for First value [{num1}], please enter an valid number ")
+   print (f"incorrect value for First value [{num1}], please enter a valid number ")
 
 if tryParseIntFloat(num2) != None:
     number2 = tryParseIntFloat(num2)
 else:
-    print (f"incorrect value for Second value [{num2}], please enter an valid number ")
+    print (f"incorrect value for Second value [{num2}], please enter a valid number ")
         
 #print (tryParseIntFloat(num1))
 #print (tryParseIntFloat(num2))
