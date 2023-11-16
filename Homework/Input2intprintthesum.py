@@ -1,3 +1,4 @@
+print ("The program will sum two numbers, they could be decimal or numeric only!") 
 num1 = input("Enter first number: ")
 num2 = input("Enter second number: ")
 
@@ -32,7 +33,7 @@ else:
         
 if tryParseIntFloat(num2) is not None and tryParseIntFloat(num1) is not None:
     try:
-        sum = number1+number2
+        sum = number1 + number2
         print("Sum of the both numbers is :", sum)
     except ValueError as e:
         print(f"Error: {e}")
