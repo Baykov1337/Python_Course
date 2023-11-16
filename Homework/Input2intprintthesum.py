@@ -28,13 +28,8 @@ else:
 if tryParseIntFloat(num2) != None:
     number2 = tryParseIntFloat(num2)
 else:
-    if num2.find(",") == -1:
-       print (f"You are trying to use comma [,] beside dot [.]")
-    else: 
-       print (f"incorrect value for Second value [{num2}], please enter a valid number ")
+    print (f"incorrect value for Second value [{num2}], please enter a valid number ")
         
-#print (tryParseIntFloat(num1))
-#print (tryParseIntFloat(num2))
 if tryParseIntFloat(num2) is not None and tryParseIntFloat(num1) is not None:
     try:
         sum = number1+number2
