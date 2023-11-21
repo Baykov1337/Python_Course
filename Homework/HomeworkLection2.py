@@ -32,6 +32,26 @@ dict_array = {"val1" : "first",
 print (list_array[-2])
 
 #WIP - work in progress get the last dictionary word 
+print (len(list(dict_array.keys())))
 #print (list(dict_array.keys())[-2])
 #the result
-print(dict_array[list(dict_array.keys())[-2]])
+print (dict_array[list(dict_array.keys())[-2]])
+
+# Test scripts - not homework
+dict_array1 = {"val1" : "first", 
+              "val2":"second", 
+              "val3":"third", 
+              "val4":"forth", 
+              "val5":["fifth", "six", "seven"]}
+
+print (dict_array1[list(dict_array1.keys())[-1]][:1:-1])
+
+print (list(dict_array1.keys()))
+print (list(dict_array1.values()))
+
+
+my_fullname = ["Boyan", "Hristov", "Baykov"]
+
+print (range(len(my_fullname)))
+for i in range(len(my_fullname)):
+    print(my_fullname[i])
