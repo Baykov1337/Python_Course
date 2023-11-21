@@ -9,3 +9,7 @@ else:
    print ("ok" )
    ##s
 print (type(b))
+
+#array 
+dat_array = ["1", "2", "3","4","5", "6"]
+print (dat_array[-2]) 
