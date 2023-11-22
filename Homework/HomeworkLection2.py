@@ -15,7 +15,7 @@ print (val1//val2)
 fName = "Boyan"
 mName = "Hristov"
 lName = "Baykov"
-print (fName+" " + mName + " " +lName)
+print (fName + " " + mName + " " + lName)
  
 #Print each of my name in separate row with single print 
 print("My Full Name is :\n", fName, "\n",mName, "\n", lName )
@@ -37,21 +37,5 @@ print (len(list(dict_array.keys())))
 #the result
 print (dict_array[list(dict_array.keys())[-2]])
 
-# Test scripts - not homework
-dict_array1 = {"val1" : "first", 
-              "val2":"second", 
-              "val3":"third", 
-              "val4":"forth", 
-              "val5":["fifth", "six", "seven"]}
-
-print (dict_array1[list(dict_array1.keys())[-1]][:1:-1])
-
-print (list(dict_array1.keys()))
-print (list(dict_array1.values()))
-
-
-my_fullname = ["Boyan", "Hristov", "Baykov"]
-
-print (range(len(my_fullname)))
-for i in range(len(my_fullname)):
-    print(my_fullname[i])
+# print last 2 values 
+print (dict_array[list(dict_array.keys())[-2:]])
