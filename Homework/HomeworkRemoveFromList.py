@@ -5,10 +5,11 @@ str1 = 'BoYaNhRiStOv' #an example
 list_str1 = list(str1)
 print (list(str1))
 
-#print (list(str1)[1])
-# int the list 1st value is 0 2nd is 1 and so on, 
+print (list(str1)[0])
 # 
-#  we can asume that 1st value is 0 2nd is 1 - but 0 cannot be divided by 2 and it's not even or odd number - so if we count like regulat math it should be 1,3,5,7,9... in a program language .. to be discussed further
+# 
+#  in the list 1st value is 0 2nd is 1 and so on  - but 0 is even number - so if we count like regulat math it should be 1,3,5,7,9... in a program language .. to be discussed further
+
 list_str1.remove(list(str1)[1]) 
 list_str1.remove(list(str1)[3]) 
 list_str1.remove(list(str1)[5]) 
@@ -28,6 +29,7 @@ print (len(str1))
 
 for x in range(len(str1)):
     if (x % 2) == 0:
+        print (x)
         new_str += str1[x]
 
 print (new_str)
