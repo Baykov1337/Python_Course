@@ -73,9 +73,20 @@
 
 #homework - remove all values that can be divided to 2 
 str1 = 'BoYaNhRiStOv'
+list_str1 = list(str1)
 print (list(str1))
 
-print (str1[1])
+#print (list(str1)[1])
+
+list_str1.remove(list(str1)[1]) 
+list_str1.remove(list(str1)[3]) 
+list_str1.remove(list(str1)[5]) 
+list_str1.remove(list(str1)[7]) 
+list_str1.remove(list(str1)[9]) 
+list_str1.remove(list(str1)[11]) 
+print (list_str1)
+
+# print (str1[1])
 new_str = ""
 print (len(str1))
 
@@ -86,14 +97,14 @@ for x in range(len(str1)):
 print (new_str)
 
 
-#print out Byn 
+# #print out Byn 
 
 
-# string = 'Let it be , let it be , let it be , let it be'
-# string = string.replace("let it be", "Don\'t let it be",2)
-# print (string)
+# # string = 'Let it be , let it be , let it be , let it be'
+# # string = string.replace("let it be", "Don\'t let it be",2)
+# # print (string)
 
-abvbg = {1:"appl123e", 2:"banana234fsdffdsdf", 3:"cherry", 4:"date"}
+# abvbg = {1:"appl123e", 2:"banana234fsdffdsdf", 3:"cherry", 4:"date"}
 
-asd = max(abvbg.values(), key=len)
-print (asd)
+# asd = max(abvbg.values(), key=len)
+# print (asd)
