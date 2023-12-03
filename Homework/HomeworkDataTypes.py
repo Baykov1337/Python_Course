@@ -90,4 +90,5 @@ for x in range(len(list_array)):
     #print (list_array[x]) 
     sums += int(list_array[x])
 
-print (f"Random numbers count are [{nummbers}]\nThe numbers generated for each random count are {list_array}\nThe sum of these numbers is : [{sums}]")
+print (f"Random numbers count are [{nummbers}]
+       \nThe numbers generated for each random count are {list_array}\nThe sum of these numbers is : [{sums}]")
