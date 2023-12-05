@@ -11,10 +11,10 @@ try:
 except ValueError:   
     print ("You've entered incorrect value!") 
 
-if val > val1:
+if int(val) > int(val1):
     print (val)
 else:
-     print (val1)
+    print (val1)
 
 #write code that accept 2 imputs sex and age
 
@@ -30,13 +30,13 @@ try:
 except ValueError:   
     print ("You've entered incorrect value!") 
 
-if age >=16 and sex == "m":
+if int(age) >=16 and sex == "m":
     print ("Mr.")
-if age <16 and sex == "m":
+if int(age) <16 and sex == "m":
     print ("Master")   
-if age >=16 and sex == "f":
+if int(age) >=16 and sex == "f":
     print ("Ms.")   
-if age <16 and sex == "f":
+if int(age) <16 and sex == "f":
     print ("Miss.")   
      
 
