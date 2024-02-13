@@ -79,7 +79,7 @@ insert_emp(emp_2)
 emps = get_emp('Jane Doe')
 print(emps)
 
-update_salary(emp_2, 75000)
+update_salary(emp_2, 55000)
 
 emps = get_emp('Jane Doe')
 print(emps)
